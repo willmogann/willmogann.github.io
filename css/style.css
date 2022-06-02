@@ -1,6 +1,55 @@
-body {
-    background-color: gainsboro;
+html {
+    min-height: 100%;
+    position: relative;
 }
+
+
+body {
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    background-color: gainsboro;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    min-width: 800px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
+    color: black;
+    padding: 10px;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header a {
+    padding: 1px 4px;
+    border-radius: 8px;
+}
+
+a:link, a:hover, a:visited, a:visited:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover, a:visited:hover {
+    background-color: gray;
+}
+
+.headlink:link, .headlink:visited, .headlink:visited:hover, .headlink:hover {
+    color: black;
+}
+
 
 .table-border {
     border: 1px solid #000000;
@@ -20,13 +69,8 @@ body {
     display: inline-block;
 }
 
-.body-style {
-    background-color: gainsboro;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .bodytext {
     margin-left: auto;
     margin-right: auto;
-    width: 50em;
+    width: 75em;
 }
