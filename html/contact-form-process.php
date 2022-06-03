@@ -7,7 +7,7 @@ if (isset($_POST['Email'])) {
 
     function problem($error)
     {
-        echo "We're sorry, but there were error(s) found with the form you submitted. ";
+        echo "Sorry, but there were error(s) found with the form you submitted. ";
         echo "These errors appear below.<br><br>";
         echo $error . "<br><br>";
         echo "Please go back and fix these errors.<br><br>";
@@ -20,7 +20,7 @@ if (isset($_POST['Email'])) {
         !isset($_POST['Email']) ||
         !isset($_POST['Message'])
     ) {
-        problem('We're sorry, but there appears to be a problem with the form you submitted.');
+        problem('Sorry, but there appears to be a problem with the form you submitted.');
     }
 
     $name = $_POST['Name']; // required
@@ -69,7 +69,7 @@ if (isset($_POST['Email'])) {
 
     <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
 
-    Thanks for getting in touch. We'll get back to you soon.
+    Thanks for getting in touch. I'll get back to you soon.
 
 <?php
 }
