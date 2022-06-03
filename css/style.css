@@ -3,62 +3,34 @@ html {
     position: relative;
 }
 
-
 body {
-    margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 60px;
     background-color: gainsboro;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    min-width: 800px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14pt;
-    font-weight: bolder;
-    color: black;
-    padding: 10px;
+.main {
+    margin-top: 60px;
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    padding: 0px 10px;
 }
-
-header li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-header a {
-    padding: 1px 4px;
-    border-radius: 8px;
-}
-
-a:link, a:hover, a:visited, a:visited:hover {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover, a:visited:hover {
-    background-color: gray;
-}
-
-.headlink:link, .headlink:visited, .headlink:visited:hover, .headlink:hover {
-    color: black;
-}
-
 
 .table-border {
     border: 1px solid #000000;
 }
 
-#photo-resize {
-	border: 2px solid #000000;
-    max-height: 120px;
-	max-width: 300px;
+.circular-image {
+    max-width: 150px;
+    max-height: 150px;
+    margin: auto;
+}
+
+#image-resize {
+    max-height: 150px;
+    max-width: 125px;
+    border: 2px solid #000000;
+    border-radius: 50%;
 }
 
 #parent { 
@@ -73,4 +45,55 @@ a:hover, a:visited:hover {
     margin-left: auto;
     margin-right: auto;
     width: 75em;
+}
+
+.sidenav {
+    height: 68%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(218, 64, 64);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a, .bottomlinks a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+}
+
+a:hover, a:visited:hover {
+    background-color: grey;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.bottomlinks {
+    height: 32%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(218, 64, 64);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.primary-list-entry {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.list-entry {
+    font-size: 23px;
+    padding-bottom: 10px;
 }

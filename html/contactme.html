@@ -1,27 +1,52 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <link href="../css/style.css" rel="stylesheet" type="text/css" >
+        <link rel="icon" href="../images/websiteicon.png" type="image/x-icon">
         <title>Contact Me | William Morgan</title>
     </head>
     <body>
-        <h3>Contact Me</h3>
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="../php/contact-form-process.php">
-                <label for="Name" class="fcf-label">Your name</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                </div>
-            <div class="fcf-form-group">
-                <label for="Email" class="fcf-label">Your email address</label>
-                <div class="fcf-input-group">
-                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                </div>
-            <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Your message</label>
-                <div class="fcf-input-group">
-                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                </div>
+        <div> <!--Sidebar-->
+            <div class="sidenav">
+                <a href="../index.html">Home</a>
+                <a href="../html/blog.html">Blog</a>
+                <a href="../html/aboutme.html">About Me</a>
+                <a href="../html/education.html">Education</a>
+                <a href="../html/skills-and-abilities.html">Skills & Abilities</a>
+                <a href="../html/experience.html">Experience</a>
             </div>
-            <div class="fcf-form-group">
-                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+            <div class="bottomlinks">
+                <div class="circular-image">
+                    <img src="../images/websiteimage.png" alt="Photo of me" id="image-resize">
+                </div>
+                <a href="../html/contactme.html">Contact Me</a>
+                <a href="https://github.com/willmogann" target="_blank" rel="noreferrer noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/william-morgan-80395221b/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                <a href="../pdf/WilliamMorgan-Resume.pdf">Resume</a>
             </div>
+        </div>
+        <div class="main">
+            <h1>Contact Me</h1>
+            <hr/>
+            <main>
+                <article>
+                    <section>
+                        <h2>Email</h2>
+                        <ul>
+                            <li><h3>wil<!-- -->liam.<!-- -->t.mor<!-- -->gan02@gmai<!-- -->l.com</h3></li>
+                        </ul>
+                        <h2>NCSU Email</h2>
+                        <ul>
+                            <li><h3>wt<!-- -->morg<!-- -->a3<!-- -->@ncsu<!-- -->.edu</h3></li>
+                        </ul>
+                        <h2>Phone (SMS Preferred)</h2>
+                        <ul>
+                            <li><h3>(919) <!-- --> 524 - <!-- --> 5464</h3></li>
+                        </ul>
+                    </section>
+                </article>
+            </main>
+        </div>
     </body>
 </html>
